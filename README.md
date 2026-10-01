@@ -169,7 +169,7 @@ la evidencia de esas validaciones.
 ---
 
 <details>
-<summary><strong>🗂️ Estructura principal del repositorio</strong></summary>
+<summary><strong>🗂️ Estructura actual del repositorio</strong></summary>
 
 ```text
 analisis-produccion-petroleo-eeuu/
