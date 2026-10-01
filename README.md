@@ -105,7 +105,7 @@ Cada fase se dividirá en bloques con **resultados esperados y controles
 antes de avanzar**.
 
 <details>
-<summary><strong>📋 Consultar las ocho fases del proyecto</strong></summary>
+<summary><strong>📋 Fases del proyecto</strong></summary>
 
 1. **Definición y organización:** objetivo, alcance, preguntas y repositorio.
 2. **Adquisición y limpieza:** conservación del original, preparación
@@ -140,9 +140,6 @@ la evidencia de esas validaciones.
 | **Validación cruzada** | Comparar los indicadores de Power BI con los resultados de SQL |
 | **Trazabilidad** | Documentar transformaciones, revisiones y diferencias de redondeo |
 
-> 🔎 Una tasa diaria no se sumará entre meses como si fuera un volumen.
-> Las reglas de cálculo se definirán antes de construir los indicadores.
-
 ---
 
 ## 📦 Entregables previstos
@@ -166,10 +163,17 @@ la evidencia de esas validaciones.
   o eficiencia de equipos**.
 - Los hallazgos y las recomendaciones se incorporarán después
   de completar y validar el análisis.
+  
+---
 
-## 🚧 Avance del proyecto
+---
 
-**Fase actual:** definición y organización.
+<details>
+<summary><strong>🗂️ Estructura principal del repositorio</strong></summary>
 
-El repositorio se actualizará progresivamente con los datos,
-los controles, los análisis y los resultados de cada fase.
+```text
+analisis-produccion-petroleo-eeuu/
+└── README.md
+```
+
+
