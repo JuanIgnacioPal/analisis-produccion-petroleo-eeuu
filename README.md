@@ -1,179 +1,188 @@
-# 🛢️ Análisis de la producción de petróleo crudo en Estados Unidos
+# 🛢️ U.S. Crude Oil Production Analysis
 
-> 📊 Proyecto de análisis de datos sobre la evolución temporal, las diferencias
-> regionales y la concentración de la producción petrolera estadounidense,
-> utilizando datos públicos de la U.S. Energy Information Administration (EIA).
+> 📊 A data analytics project exploring production trends, regional
+> differences, and the geographic concentration of U.S. crude oil
+> production using public data from the U.S. Energy Information
+> Administration (EIA).
 
-**Estado:** 🚧 En desarrollo — Fase 1: definición y organización  
-**Sector:** 🛢️ Petróleo y gas · Producción de petróleo crudo  
-**Cobertura:** 🌎 Estados Unidos  
-**Frecuencia:** 📅 Mensual  
-**Herramientas:** Excel · Power Query · MySQL · SQL · Power BI · DAX · GitHub
-
----
-
-## 🎯 Objetivo del proyecto
-
-Analizar **cómo evoluciona la producción de petróleo crudo en Estados Unidos**,
-identificar las áreas que contribuyen a su crecimiento o disminución y
-evaluar su concentración geográfica.
-
-El proyecto desarrollará un proceso reproducible desde la adquisición
-y limpieza de datos hasta su validación en SQL y presentación en Power BI.
-
-## 🏭 Caso de uso
-
-Un equipo de análisis del sector energético necesita comprender
-**cuánto cambia la producción, dónde se originan esos cambios y cómo
-se distribuye la actividad entre las áreas productoras**.
-
-El análisis permitirá:
-
-- 📈 **Seguir tendencias:** comparar la evolución de la producción.
-- 🌎 **Comparar territorios:** identificar diferencias entre áreas productoras.
-- 🔎 **Descomponer cambios:** determinar qué áreas aportan al aumento
-  o disminución de la producción nacional.
-- 🏆 **Examinar rankings:** observar cambios en las posiciones relativas.
-- 🛢️ **Evaluar concentración:** medir cuánto aportan las principales áreas.
-
-Los resultados ofrecerán contexto para el seguimiento del sector.
-Las explicaciones sobre las causas de los cambios requerirán evidencia
-complementaria.
-
-## ❓ Preguntas de análisis
-
-| Eje | Pregunta |
-|---|---|
-| 📈 Evolución | ¿Cómo cambia la producción a lo largo del tiempo? |
-| 📉 Variaciones | ¿Qué áreas presentan los mayores aumentos y disminuciones? |
-| 🔎 Contribución | ¿Qué áreas explican el cambio de la producción nacional? |
-| 🏆 Posicionamiento | ¿Cómo cambia el ranking de las áreas productoras? |
-| 🛢️ Concentración | ¿Qué proporción de la producción reúnen las principales áreas? |
+**Status:** 🚧 In progress — Phase 1: project definition and organization  
+**Industry:** 🛢️ Oil & Gas · Crude oil production  
+**Coverage:** 🌎 United States  
+**Frequency:** 📅 Monthly  
+**Tools:** Excel · Power Query · MySQL · SQL · Power BI · DAX · GitHub
 
 ---
 
-## 🌎 Alcance inicial
+## 🎯 Project Objective
 
-| Dimensión | Definición |
+Analyze **how U.S. crude oil production changes over time**, identify
+the geographic areas contributing to its growth or decline, and
+assess production concentration.
+
+The project will develop a reproducible workflow covering data
+acquisition, preparation, SQL analysis, indicator validation, and
+reporting in Power BI.
+
+## 🏭 Business Context
+
+An energy analytics team needs to understand **how much production
+changes, where those changes originate, and how production is
+distributed across producing areas**.
+
+The analysis will support:
+
+- 📈 **Trend monitoring:** tracking production over time.
+- 🌎 **Geographic comparisons:** identifying differences between
+  producing areas.
+- 🔎 **Change attribution:** measuring each area's contribution
+  to changes in national production.
+- 🏆 **Production rankings:** tracking changes in the relative
+  position of producing areas.
+- 🛢️ **Concentration analysis:** measuring the share of production
+  accounted for by the leading areas.
+
+The results will provide context for monitoring the sector.
+Explanations of the underlying causes will require additional evidence.
+
+## ❓ Analytical Questions
+
+| Focus | Question |
 |---|---|
-| **Actividad** | Producción de petróleo crudo |
-| **País** | Estados Unidos |
-| **Frecuencia** | Mensual |
-| **Cobertura geográfica** | Estados y áreas marítimas federales disponibles en la fuente |
-| **Agrupación regional** | Distritos petroleros PADD, según la clasificación de la EIA |
-| **Período de análisis** | Pendiente de validar la cobertura del archivo fuente |
-| **Unidad original** | Pendiente de confirmar en el archivo descargado |
-| **Enfoque** | Tendencias, variaciones, contribución, rankings y concentración |
+| 📈 Trends | How does production change over time? |
+| 📉 Changes | Which areas record the largest increases and decreases? |
+| 🔎 Contribution | How much does each area contribute to changes in national production? |
+| 🏆 Rankings | How do producing areas move up or down the rankings? |
+| 🛢️ Concentration | What share of production comes from the leading areas? |
 
-> 📌 La definición del producto y sus inclusiones se documentará según
-> las notas oficiales de la serie seleccionada. Esta primera versión
-> se centra en petróleo crudo; el gas natural queda fuera del alcance.
+---
 
-## 🗃️ Fuente de datos
+## 🌎 Initial Scope
+
+| Dimension | Definition |
+|---|---|
+| **Activity** | Crude oil production |
+| **Country** | United States |
+| **Frequency** | Monthly |
+| **Geographic coverage** | States and federal offshore areas available in the source |
+| **Regional grouping** | Petroleum Administration for Defense Districts (PADDs), following EIA classifications |
+| **Analysis period** | To be determined after inspecting the source file |
+| **Original unit** | To be confirmed in the downloaded file |
+| **Analytical focus** | Trends, growth and decline, contribution, rankings, and concentration |
+
+> 📌 The product definition and its inclusions will be documented
+> using the official notes for the selected series. This version
+> focuses on crude oil; natural gas is outside its scope.
+
+## 🗃️ Data Source
 
 **U.S. Energy Information Administration (EIA)**
 
-Organismo de referencia para los datos utilizados en este proyecto.
+- 🛢️ [Crude Oil Production](https://www.eia.gov/dnav/pet/pet_crd_crpdn_adc_mbblpd_m.htm)
+- 🌐 [Petroleum & Other Liquids Data](https://www.eia.gov/petroleum/data.php)
+- 📚 [Project Source Register](docs/sources.md)
 
-- 🛢️ [Serie de producción de petróleo crudo](https://www.eia.gov/dnav/pet/pet_crd_crpdn_adc_mbblpd_m.htm)
-- 🌐 [Portal de petróleo y otros líquidos](https://www.eia.gov/petroleum/data.php)
+An **unmodified copy of the original file** will be retained.
+The documentation will record:
 
-Se conservará una **copia del archivo original** y se documentarán:
-
-- Fecha de descarga.
-- Cobertura temporal y geográfica.
-- Definición del producto y unidades.
-- Códigos especiales y valores faltantes.
-- Transformaciones realizadas.
+- Download date.
+- Temporal and geographic coverage.
+- Product definition and measurement units.
+- Special codes and missing values.
+- Applied transformations.
 
 ---
 
-## ⚙️ Herramientas y proceso analítico
+## ⚙️ Tools and Analytical Workflow
 
-| Herramienta | Función prevista |
+| Tool | Planned Use |
 |---|---|
-| **Excel y Power Query** | Inspección, limpieza y transformación de datos |
-| **MySQL Workbench y SQL** | Consultas, controles de calidad y validación de indicadores |
-| **Power BI y DAX** | Modelo de datos, medidas y visualizaciones |
-| **GitHub** | Control de versiones, documentación y publicación |
+| **Excel and Power Query** | Data inspection, cleaning, and transformation |
+| **MySQL Workbench and SQL** | Queries, quality checks, and indicator validation |
+| **Power BI and DAX** | Data modeling, measures, and visualizations |
+| **GitHub** | Version control, documentation, and publication |
 
-### 🧭 Ruta de trabajo
+### 🧭 Project Workflow
 
-**Fuente EIA → Preparación → SQL → KPIs → Power BI → Validación → Hallazgos**
+**EIA Data → Preparation → SQL → KPIs → Power BI → Validation → Findings**
 
-Cada fase se dividirá en bloques con **resultados esperados y controles
-antes de avanzar**.
+Each phase will be divided into manageable blocks with
+**expected outputs and validation checks before proceeding**.
 
 <details>
-<summary><strong>📋 Fases del proyecto</strong></summary>
+<summary><strong>📋 Project Phases</strong></summary>
 
-1. **Definición y organización:** objetivo, alcance, preguntas y repositorio.
-2. **Adquisición y limpieza:** conservación del original, preparación
-   y diccionario de datos.
-3. **Análisis en SQL:** carga, controles de calidad y exploración.
-4. **Definición y validación de KPIs:** fórmulas, unidades y reglas
-   de agregación.
-5. **Modelo de datos:** tablas, calendario, relaciones y validación
-   en Power BI.
-6. **Medidas y dashboards:** cálculos DAX, visualizaciones y contraste
-   con SQL.
-7. **Auditoría de calidad:** consolidación de controles, conciliaciones
-   y limitaciones.
-8. **Publicación y cierre:** conclusiones, README definitivo, imágenes
-   y demostración del informe.
+1. **Project definition and organization:** objectives, scope,
+   analytical questions, and repository setup.
+2. **Data acquisition and cleaning:** original file preservation,
+   data preparation, and data dictionary.
+3. **SQL analysis:** data loading, quality checks, and exploratory
+   analysis.
+4. **KPI definition and validation:** formulas, units, and
+   aggregation rules.
+5. **Data modeling:** tables, calendar, relationships, and model
+   validation in Power BI.
+6. **Measures and dashboards:** DAX calculations, visualizations,
+   and comparison with SQL results.
+7. **Data quality audit:** consolidation of checks, reconciliations,
+   and limitations.
+8. **Publication and project closure:** conclusions, final README,
+   dashboard previews, and report demonstration.
 
-La calidad se comprobará durante todo el proceso; la fase 7 reunirá
-la evidencia de esas validaciones.
+Quality checks will take place throughout the project.
+Phase 7 will consolidate the supporting evidence.
 
 </details>
 
-## 🧪 Criterios de calidad
+## 🧪 Data Quality Principles
 
-| Control | Propósito |
+| Check | Purpose |
 |---|---|
-| **Unicidad** | Verificar una observación por período y área en la tabla analítica |
-| **Continuidad temporal** | Detectar meses ausentes dentro del período seleccionado |
-| **Valores especiales** | Distinguir ceros, datos no disponibles y otros códigos de la fuente |
-| **Coherencia geográfica** | Evitar duplicar áreas o sumar componentes junto con sus subtotales |
-| **Unidades y agregación** | Diferenciar volúmenes mensuales de tasas promedio diarias |
-| **Conciliación** | Contrastar las agregaciones con los totales de referencia |
-| **Validación cruzada** | Comparar los indicadores de Power BI con los resultados de SQL |
-| **Trazabilidad** | Documentar transformaciones, revisiones y diferencias de redondeo |
+| **Uniqueness** | Verify one observation per period and geographic area in the analytical table |
+| **Time coverage** | Detect missing months within the selected period |
+| **Special values** | Distinguish zero production from unavailable data and other source codes |
+| **Geographic consistency** | Avoid overlapping areas or adding components together with their subtotals |
+| **Units and aggregation** | Distinguish monthly volumes from average daily production rates |
+| **Reconciliation** | Compare aggregated values with source reference totals |
+| **Cross-validation** | Compare Power BI indicators with SQL results |
+| **Traceability** | Document transformations, source revisions, and rounding differences |
+
+> 🔎 Daily production rates will not be summed across months as
+> though they were monthly volumes. Calculation and aggregation
+> rules will be defined before the indicators are built.
 
 ---
 
-## 📦 Entregables previstos
+## 📦 Planned Deliverables
 
-- [ ] Datos originales y datos preparados.
-- [ ] Diccionario de datos y registro de transformaciones.
-- [ ] Scripts SQL de análisis y validación.
-- [ ] Catálogo de indicadores y reglas de cálculo.
-- [ ] Modelo de datos y dashboard de Power BI.
-- [ ] Auditoría de calidad.
-- [ ] Hallazgos, conclusiones y limitaciones.
-- [ ] Imágenes de los dashboards y demostración del informe.
+- [ ] Original and prepared datasets.
+- [ ] Data dictionary and transformation log.
+- [ ] SQL analysis and validation scripts.
+- [ ] KPI catalog and calculation rules.
+- [ ] Power BI data model and dashboard.
+- [ ] Data quality audit.
+- [ ] Findings, conclusions, and limitations.
+- [ ] Dashboard previews and report demonstration.
 
-## ⚠️ Limitaciones del análisis
+## ⚠️ Analytical Limitations
 
-- Los datos agregados por área geográfica no permiten evaluar
-  el desempeño de **pozos individuales, equipos o empresas**.
-- Una caída regional de producción no demuestra por sí sola
-  el agotamiento de un yacimiento ni una falla operativa.
-- Esta fuente no permite estimar por sí sola **reservas, rentabilidad
-  o eficiencia de equipos**.
-- Los hallazgos y las recomendaciones se incorporarán después
-  de completar y validar el análisis.
-  
+- Geographic aggregates cannot be used to evaluate the performance
+  of **individual wells, equipment, or companies**.
+- A regional production decline does not, by itself, demonstrate
+  reservoir depletion or an operational failure.
+- This source alone does not support estimates of **reserves,
+  profitability, or equipment efficiency**.
+- Findings and recommendations will be added after the analysis
+  has been completed and validated.
+
 ---
 
 <details>
-<summary><strong>🗂️ Estructura actual del repositorio</strong></summary>
+<summary><strong>🗂️ Current Repository Structure</strong></summary>
 
 ```text
-analisis-produccion-petroleo-eeuu/
+us-crude-oil-production-analysis/
 └── README.md
+
 ```
 
 </details>
-
-
