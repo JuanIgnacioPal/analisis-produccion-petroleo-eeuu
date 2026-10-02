@@ -5,7 +5,7 @@
 > production using public data from the U.S. Energy Information
 > Administration (EIA).
 
-**Status:** 🚧 In progress — Phase 1: project definition and organization  
+**Status:** 🚧 In progress — Phase 2: Data acquisition and cleaning  
 **Industry:** 🛢️ Oil & Gas · Crude oil production  
 **Coverage:** 🌎 United States  
 **Frequency:** 📅 Monthly  
