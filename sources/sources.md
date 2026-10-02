@@ -27,7 +27,7 @@ incorporated into the repository.
 | Exact filename | `PET_CRD_CRPDN_ADC_MBBLPD_M.xls` |
 | Repository path | `data/raw/PET_CRD_CRPDN_ADC_MBBLPD_M.xls` |
 | Download URL | `https://www.eia.gov/dnav/pet/xls/PET_CRD_CRPDN_ADC_MBBLPD_M.xls` |
-| Download date | `10-01.2026` |
+| Download date | `2026-10-01` |
 
 ## 📖 Reference Materials
 
