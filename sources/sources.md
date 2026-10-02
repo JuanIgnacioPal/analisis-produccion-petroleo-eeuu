@@ -24,17 +24,10 @@ incorporated into the repository.
 
 | Field | Value |
 |---|---|
-| Exact filename | Pending |
-| Repository path | Pending |
-| Download URL | Pending |
-| Download date | Pending |
-| Source publication or revision date | Pending verification |
-| First period available in the file | Pending inspection |
-| Last period available in the file | Pending inspection |
-| Selected analysis period | Pending definition |
-| Measurement unit | Pending confirmation |
-| Product definition and inclusions | Pending review of source notes |
-| Worksheets or tables used | Pending inspection |
+| Exact filename | `PET_CRD_CRPDN_ADC_MBBLPD_M.xls` |
+| Repository path | `data/raw/PET_CRD_CRPDN_ADC_MBBLPD_M.xls` |
+| Download URL | `https://www.eia.gov/dnav/pet/xls/PET_CRD_CRPDN_ADC_MBBLPD_M.xls` |
+| Download date | `10-01.2026` |
 
 ## 📖 Reference Materials
 
