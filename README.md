@@ -65,8 +65,8 @@ Explanations of the underlying causes will require additional evidence.
 | **Frequency** | Monthly |
 | **Geographic coverage** | States and federal offshore areas available in the source |
 | **Regional grouping** | Petroleum Administration for Defense Districts (PADDs), following EIA classifications |
-| **Analysis period** | To be determined after inspecting the source file |
-| **Original unit** | To be confirmed in the downloaded file |
+| **Analysis period** | January 2010–July 2026 |
+| **Original unit** | Thousand barrels per day (monthly average) |
 | **Analytical focus** | Trends, growth and decline, contribution, rankings, and concentration |
 
 > 📌 The product definition and its inclusions will be documented
