@@ -5,7 +5,7 @@ transformation rules, indicators, quality checks, and conclusions.
 
 ## Available Documents
 
-- [Source Register](sources.md)
+- [Source](sources.md)
 
 Additional documents will be added as their project phases
 are completed.
