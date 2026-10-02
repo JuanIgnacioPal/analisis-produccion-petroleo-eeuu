@@ -181,8 +181,22 @@ Phase 7 will consolidate the supporting evidence.
 
 ```text
 us-crude-oil-production-analysis/
-└── README.md
-
+├── README.md
+├── data/
+│   ├── raw/
+│   │   └── README.md
+│   └── processed/
+│       └── README.md
+├── docs/
+│   └── README.md
+├── images
+│   
+├── power_bi
+│   
+├── sources/
+│   └── sources.md
+└── sql/
+    └── README.md
 ```
 
 </details>
