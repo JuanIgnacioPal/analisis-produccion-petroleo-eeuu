@@ -28,6 +28,13 @@ incorporated into the repository.
 | Repository path | `data/raw/PET_CRD_CRPDN_ADC_MBBLPD_M.xls` |
 | Download URL | `https://www.eia.gov/dnav/pet/xls/PET_CRD_CRPDN_ADC_MBBLPD_M.xls` |
 | Download date | `2026-10-01` |
+| Source release date | `2026-09-30` |
+| First period available in the file | `1920-01` |
+| Last period available in the file | `2026-07` |
+| Selected analysis period | `2010-01 to 2026-07` |
+| Measurement unit | Thousand barrels per day; monthly average daily production |
+| Worksheets used | `Contents` for metadata; `Data 1` for production series |
+| Product definition and inclusions | EIA crude oil definition, including lease condensate; excluding liquids produced at natural gas processing plants |
 
 ## 📖 Reference Materials
 
@@ -39,16 +46,3 @@ in the calculations.
 |---|---|
 | [EIA — Energy Explained](https://www.eia.gov/energyexplained/) | Energy sector context and concepts |
 | [SLB — Energy Glossary](https://glossary.slb.com/en/) | Oil and gas terminology |
-
-Specific references supporting definitions and methodological
-decisions will be added when used.
-
-## 🔎 Traceability Rules
-
-- Preserve the downloaded file without modifications in `data/raw/`.
-- Store prepared datasets in `data/processed/`.
-- Record each transformation and its purpose.
-- Review the definitions, sources, and notes for the selected series.
-- Document the treatment of missing values and special codes.
-- Record any source updates that change the analytical results.
-- Identify the dataset version used in the published analysis.
