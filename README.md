@@ -79,7 +79,7 @@ Explanations of the underlying causes will require additional evidence.
 
 - 🛢️ [Crude Oil Production](https://www.eia.gov/dnav/pet/pet_crd_crpdn_adc_mbblpd_m.htm)
 - 🌐 [Petroleum & Other Liquids Data](https://www.eia.gov/petroleum/data.php)
-- 📚 [Project Source Register](docs/sources.md)
+- 📚 [Project Source Register](https://github.com/JuanIgnacioPal/us-crude-oil-production-analysis/blob/main/sources/sources.md)
 
 An **unmodified copy of the original file** will be retained.
 The documentation will record:
@@ -189,9 +189,6 @@ us-crude-oil-production-analysis/
 │       └── README.md
 ├── docs/
 │   └── README.md
-├── images
-│   
-├── power_bi
 │   
 ├── sources/
 │   └── sources.md
